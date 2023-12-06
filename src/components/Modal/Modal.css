@@ -1,0 +1,279 @@
+.backg_pop {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outline_pop {
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 135px 64px 190px 64px;
+}
+.wind_pop {
+    position: relative;
+    width: 800px;
+    padding: 100px 10px 116px 10px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.container_pop {
+    display: block;
+    text-align: center;
+}
+.container_pop p {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
+.smile_pop {
+    margin-top: 60px;
+}
+.close {
+    position: absolute;
+    right: 34px;
+    top: 26px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.close:hover {
+    opacity: 0.6;
+}
+/* оформление заявки */
+.app_text p {
+    color: #696969;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+.app_text {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 12px 21px;
+    border: 1.5px solid #989898;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+    color: #000;
+    margin-bottom: 24px;
+    position: relative;
+}
+.app_text input {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-top: 10px;
+}
+.backg_pop form .valid {
+    outline: 1.5px solid #7400bd;
+    transition: all ease 0.5s;
+}
+.container_app {
+    display: block;
+    text-align: center;
+}
+.container_app h4 {
+    text-align: left;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.wind_app {
+    padding: 28px 83px 36px 83px;
+}
+.check_app label {
+    display: flex;
+    align-items: center;
+}
+.check_app label p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-left: 8px;
+}
+.check_app label p a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #7400bd;
+}
+.check_app label p a:hover {
+    text-decoration: underline;
+}
+.but_app {
+    padding: 14px 76px;
+    background: #cfcfcf;
+    margin-top: 54px;
+}
+.but_app:hover {
+    background: #000;
+    color: #fff;
+}
+.check_app {
+    display: flex;
+}
+.check_app input[type="checkbox"] {
+    display: none;
+}
+.dot_app + label {
+    position: relative;
+}
+.dot_app + label::before {
+    left: 0;
+    display: block;
+    content: "";
+    min-width: 16px;
+    min-height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #000;
+    top: 0;
+    cursor: pointer;
+}
+.check_app input[type="checkbox"]:checked + label::before {
+    border: 1px solid #7400bd;
+    background: #7400bd;
+}
+.novalid_text {
+    color: red !important;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+}
+@media screen and (max-width: 1250px) {
+    .but_app {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .outline_pop {
+        width: 80%;
+    }
+    .wind_pop {
+        width: 100%;
+    }
+    .outline_app {
+        width: 87%;
+        padding: 90px 55px 130px 55px;
+    }
+    .check_app label p {
+        text-align: left;
+    }
+    .but_app {
+        margin-top: 30px;
+    }
+    .close {
+        right: 20px;
+        top: 20px;
+    }
+    .wind_app {
+        padding: 28px 50px 30px 45px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .container_pop p {
+        font-size: 24px;
+    }
+    .smile_pop {
+        margin-top: 30px;
+    }
+    .outline_pop {
+        padding: 90px 64px 130px 64px;
+        width: 90%;
+    }
+    .wind_pop {
+        padding: 80px 10px 50px 10px;
+    }
+    .close_app {
+        top: 15px;
+    }
+    .outline_app {
+        width: 95%;
+        padding: 35px 30px 65px 30px;
+    }
+    .wind_app {
+        padding: 45px 45px 20px 40px;
+    }
+    .container_app h4 {
+        margin-bottom: 18px;
+    }
+    .but_app {
+        margin-top: 20px;
+    }
+    .check_app label p,
+    .check_app label p a {
+        font-size: 18px;
+    }
+    .but_app {
+        font-size: 20px;
+        padding: 10px 55px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .container_pop p {
+        font-size: 20px;
+    }
+    .smile_pop {
+        margin-top: 20px;
+    }
+    .outline_pop {
+        padding: 30px 40px 60px 40px;
+        width: 95%;
+    }
+    .wind_pop {
+        padding: 55px 10px 10px 10px;
+    }
+    .wind_app {
+        border-radius: 25px;
+        padding-top: 45px;
+    }
+    .outline_app {
+        padding: 10px 10px 25px 10px;
+    }
+    .but_app {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .check_app label p,
+    .check_app label p a {
+        font-size: 16px;
+    }
+    .dot_app + label::before {
+        min-width: 14px;
+        min-height: 14px;
+    }
+    .outline_app {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container_pop p {
+        font-size: 18px;
+    }
+    .smile_pop {
+        margin-top: 10px;
+        width: 20%;
+        height: 20%;
+    }
+    .outline_pop {
+        padding: 15px;
+    }
+    .close {
+        right: 15px;
+        top: 15px;
+    }
+    .outline_app {
+        padding: 10px;
+    }
+    .but_app {
+        margin-bottom: 0;
+    }
+}
