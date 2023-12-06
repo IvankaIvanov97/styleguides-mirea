@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/build/bundle.e357ad76.js",
+    "main.js": "/build/bundle.7f9ba744.js",
     "main.css": "/static/css/main.fcd23929.css",
     "wave.gif": "/54a26e4ededd07101efd.gif",
     "calc_back.png": "/4ffd8d1766256491b812.png",
@@ -23,7 +23,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "build/bundle.e357ad76.js",
+    "build/bundle.7f9ba744.js",
     "static/css/main.fcd23929.css"
   ]
 }
