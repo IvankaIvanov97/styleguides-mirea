@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { setModal } from "../../redux/slicers/modalSlicer";
 
 /**
-*   ГОВНО ЕБАНОЕ
+*   Данный компонент предназначен для отрисовки первого блока сайта
 */
 function Buhmain() {
     const dispatch = useDispatch();
