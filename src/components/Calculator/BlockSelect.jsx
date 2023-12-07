@@ -1,7 +1,11 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setFormData } from "../../redux/slicers/formDataSlicer";
+import { arrayOf, oneOf, propTypes } from "prop-types";
 
+/**
+*   Компонент для выборки данных для формы (аналог select)
+*/
 function BlockSelect({ type, name, data, onClick }) {
     const { formData } = useSelector((state) => state);
     const dispatch = useDispatch();
@@ -127,5 +131,10 @@ function BlockSelect({ type, name, data, onClick }) {
         </div>
     );
 }
-
+BlockSelect.propTypes = {
+    type: oneOf("checkbox", undefined),
+    name: oneOf("form", "system", "agents"),
+    data: arrayOf(propTypes.object),
+    onClick: propTypes.func
+}
 export default BlockSelect;

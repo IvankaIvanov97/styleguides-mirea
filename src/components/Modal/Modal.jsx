@@ -7,6 +7,10 @@ import { setModal } from "../../redux/slicers/modalSlicer";
 import smile from "../../assets/img/smile.png";
 import { ReactComponent as Close } from "../../assets/img/close.svg";
 import axios from "axios";
+
+/**
+*   Модальное окно - контактная форма
+*/
 function Modal() {
     const { modal } = useSelector((state) => state);
     const { formData } = useSelector((state) => state);

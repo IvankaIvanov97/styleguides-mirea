@@ -15,6 +15,10 @@ import sber from "../../assets/img/sber.svg";
 import { useState } from "react";
 import BlockSelect from "./BlockSelect";
 import { setModal } from "../../redux/slicers/modalSlicer";
+
+/**
+*   Блок страницы "Калькулятор". Выводит форму с расчётом БУ.
+*/
 function Calculator() {
     const [active, setActive] = useState(false);
     const [resultCalc, setResultCalc] = useState();

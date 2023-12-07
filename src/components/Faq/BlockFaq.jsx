@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
 import { ReactComponent as Arrow } from "../../assets/img/arow.svg";
+import { arrayOf, propTypes } from "prop-types";
 
+/**
+*   Компонент блока FAQ, в котором отображается вопрос/ответ.
+*/
 function BlockFaq({ data }) {
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -30,6 +34,9 @@ function BlockFaq({ data }) {
             </div>
         </ReactCardFlip>
     );
+}
+BlockFaq.propTypes = {
+    data: arrayOf(propTypes.object)
 }
 
 export default BlockFaq;

@@ -9,6 +9,9 @@ import ymar from "../../assets/img/ymar.svg";
 import ali from "../../assets/img/ali.svg";
 import { domen } from "../../services/api";
 
+/**
+*   Блок страницы, презентующий данные о маркетплейсах
+*/
 function LidMagnit() {
     return (
         <section id="lid_magnit">

@@ -2,6 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 
 import OsobBlock from "./OsobBlock";
 import { osob } from "../../services/export";
+
+/**
+*   Блок страницы, отображающий особенности БУ
+*/
 function Osobiy() {
     const [flipped, setFlipped] = useState(false);
 

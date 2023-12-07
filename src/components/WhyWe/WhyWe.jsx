@@ -2,6 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import why11 from "../../assets/img/why11.png";
 import why22 from "../../assets/img/why22.png";
 import { dataCard } from "../../services/export";
+
+/**
+*   Блок страницы "Почему мы"
+*/
 function WhyWe() {
     const [activeCard, setActiveCard] = useState(0);
     const [animation, setAnimation] = useState(false);

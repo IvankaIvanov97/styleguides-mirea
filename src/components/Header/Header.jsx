@@ -4,6 +4,10 @@ import burger from "../../assets/img/burger.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { ReactComponent as Close } from "../../assets/img/close.svg";
 import { nav } from "../../services/export";
+
+/**
+*   Шапка страницы
+*/
 function Header() {
     const [active, setActive] = useState(false);
     const ham = useRef();

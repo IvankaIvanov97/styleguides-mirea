@@ -5,6 +5,10 @@ import wa from "../../assets/img/wa.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { nav } from "../../services/export";
 import { domen } from "../../services/api";
+
+/**
+*   Подвал страницы
+*/
 function Footer() {
     return (
         <footer id="footer">

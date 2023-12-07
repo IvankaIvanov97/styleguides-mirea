@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ReactCardFlip from "react-card-flip";
+import { arrayOf, propTypes } from "prop-types";
 
+/**
+*   Компонент блока "Особенности"
+*/
 function OsobBlock({ data, isFlipped }) {
     const [localIsFlipped, setLocalIsFlipped] = useState(isFlipped);
 
@@ -26,6 +30,10 @@ function OsobBlock({ data, isFlipped }) {
             </div>
         </ReactCardFlip>
     );
+}
+OsobBlock.propTypes = {
+    data: arrayOf(propTypes.object),
+    isFlipped: propTypes.bool
 }
 
 export default OsobBlock;

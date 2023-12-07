@@ -6,6 +6,10 @@ import InputMask from "react-input-mask";
 import { useDispatch, useSelector } from "react-redux";
 import { setModal } from "../../redux/slicers/modalSlicer";
 import axios from "axios";
+
+/**
+*   Блок страницы "Вопросы", имеющий в себе форму заполнения контактной информации
+*/
 function Quas() {
     const dispatch = useDispatch();
     const { formData } = useSelector((state) => state);
